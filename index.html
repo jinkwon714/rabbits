@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+    <style>
+      body {
+        background-color: black;
+      }
+
+      .mainBtn {
+        background-color: salmon;
+        color: white;
+        font-size: 22px;
+        width: 140px;
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      ul {
+        flex-direction: column;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      .mainBtn {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainBtn">Find a rabbit🐇</div>
+    <ul>
+      <li>
+        <img src="img/carrot.png" alt="carrot" class="carrot" />
+      </li>
+      <li>
+        <img src="img/carrot.png" alt="carrot" class="carrot" />
+      </li>
+      <li>
+        <img src="img/carrot.png" alt="carrot" class="carrot" />
+      </li>
+      <li>
+        <img src="img/carrot.png" alt="carrot" class="carrot" />
+      </li>
+      <li>
+        <img src="img/carrot.png" alt="carrot" class="carrot" />
+      </li>
+      <li>
+        <img src="img/carrot.png" alt="carrot" class="carrot" />
+      </li>
+      <li>
+        <img src="img/carrot.png" alt="carrot" class="carrot" />
+      </li>
+      <li>
+        <img src="img/carrot.png" alt="carrot" class="carrot" />
+      </li>
+      <li>
+        <img src="img/carrot.png" alt="carrot" class="carrot" />
+      </li>
+      <li>
+        <img src="img/carrot.png" alt="carrot" class="carrot" />
+      </li>
+      <li>
+        <img src="img/rabbit.png" alt="rabbit" class="rabbit" />
+      </li>
+      <li>
+        <img src="img/carrot.png" alt="carrot" class="carrot" />
+      </li>
+      <li>
+        <img src="img/carrot.png" alt="carrot" class="carrot" />
+      </li>
+      <li>
+        <img src="img/carrot.png" alt="carrot" class="carrot" />
+      </li>
+      <li>
+        <img src="img/carrot.png" alt="carrot" class="carrot" />
+      </li>
+      <li>
+        <img src="img/carrot.png" alt="carrot" class="carrot" />
+      </li>
+      <li>
+        <img src="img/carrot.png" alt="carrot" class="carrot" />
+      </li>
+    </ul>
+    <script>
+      const mainBtn = document.querySelector(".mainBtn");
+
+      mainBtn.addEventListener("click", (event) => {
+        const rabbit = document.querySelector(".rabbit");
+        rabbit.scrollIntoView();
+      });
+    </script>
+  </body>
+</html>
