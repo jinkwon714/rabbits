@@ -7,6 +7,9 @@
     <style>
       body {
         background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       .mainBtn {
@@ -89,7 +92,7 @@
     <script>
       const mainBtn = document.querySelector(".mainBtn");
 
-      mainBtn.addEventListener("click", (event) => {
+      mainBtn.addEventListener("click", () => {
         const rabbit = document.querySelector(".rabbit");
         rabbit.scrollIntoView();
       });
